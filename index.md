@@ -7,9 +7,9 @@ layout: home
 
 This site discover nice place around earth.
 
-## City
+## Unite State Cities
 
--   [Saint Louis](./city/saint-louis)
+-   [Saint Louis](./united-states/saint-louis)
 
 ## Links
 
