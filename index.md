@@ -9,6 +9,7 @@ This site discover nice place around earth.
 
 ## Unite State Cities
 
+-   [Ames](./united-states/ames)
 -   [Saint Louis](./united-states/saint-louis)
 
 ## Links
