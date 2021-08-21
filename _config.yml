@@ -1,0 +1,23 @@
+title: discover.mengw.io
+email: wm@mengw.io
+description: Discover nice places!
+url: https://discover.mengw.io
+github_username: WMXPY
+theme: minima
+repository: WMXPY/discover.mengw.io
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+author:
+  name: WMXPY
+  email: wm@mengw.io
+plugins:
+  - jekyll-github-metadata
+exclude:
+  - .jekyll-cache/
+  - docs/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - makefile
