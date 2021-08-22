@@ -7,10 +7,10 @@ layout: home
 
 This site discover nice place around earth.
 
-## Unite State Cities
+## Unite States
 
--   [Ames](./united-states/ames)
--   [Saint Louis](./united-states/saint-louis)
+-   [Ames - IA](./united-states/ames)
+-   [Saint Louis - MO](./united-states/saint-louis)
 
 ## Links
 
