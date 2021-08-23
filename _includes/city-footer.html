@@ -1,11 +1,11 @@
 <footer class="site-footer h-card">
-    <data class="u-url" href="{{ " /" | relative_url }}"></data>
+    <data class="u-url" href="{{ "/" | relative_url }}"></data>
     <div class="wrapper">
         <div class="footer-col-wrapper">
             <div class="footer-col">
                 {% if site.github.private != true and site.github.license %}
                 <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
-                    This site is open source. {% github_edit_link "Improve this page" %}.
+                    This site is open source. <a href="https://github.com/WMXPY/discover.mengw.io/edit/main/_data/{{page.country}}/{{page.state}}/{{page.city}}.yml">Improve this page</a> ({% github_edit_link "Metadata" %})
                 </div>
                 {% endif %}
             </div>
