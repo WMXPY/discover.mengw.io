@@ -9,8 +9,9 @@ This site discover nice place around earth.
 
 {% for country in site.data %}
 {% assign countryName = country[0] %}
+{% unless countryName == "dictionary" %}
 
-## {{ countryName | capitalize }}
+## {{ site.data.dictionary[countryName] }}
 
 {% for state in site.data[countryName] %}
 {% assign stateName = state[0] %}
@@ -30,6 +31,8 @@ This site discover nice place around earth.
 </ul>
 
 {% endfor %}
+
+{% endunless %}
 {% endfor %}
 
 ## Links
