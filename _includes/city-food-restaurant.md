@@ -17,6 +17,9 @@ Cumulative Rate: {{ rate-integral }}.{{ rate-fractional }} / 5.00
 
 <p>
 {% for comment in place.comments %}
-({{ comment.rate }} / 5.00) {{comment.comment}} - {{comment.author}}<br>
+{% assign comment-rate-split = comment.rate | at_least: 0 | at_most: 5 | round: 2 | split: "." %}
+{% assign comment-rate-integral = comment-rate-split[0] %}
+{% assign comment-rate-fractional = comment-rate-split[1] | append: "00" | truncate: 2, "" %}
+({{ comment-rate-integral }}.{{ comment-rate-fractional }} / 5.00) {{ comment.comment }} - {{ comment.author }}<br>
 {% endfor %}
 </p>
