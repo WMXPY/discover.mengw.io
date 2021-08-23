@@ -7,10 +7,30 @@ layout: home
 
 This site discover nice place around earth.
 
-## Unite States
+{% for country in site.data %}
+{% assign countryName = country[0] %}
 
--   [Ames - IA](./united-states/ia/ames)
--   [Saint Louis - MO](./united-states/mo/saint-louis)
+## {{ countryName | capitalize }}
+
+{% for state in site.data[countryName] %}
+{% assign stateName = state[0] %}
+
+### {{ stateName | capitalize }}
+
+<ul>
+{% for city in site.data[countryName][stateName] %}
+{% assign cityName = city[0] %}
+{% assign cityData = city[1] %}
+
+<li>   
+<a href="./{{countryName}}/{{stateName}}/{{cityName}}">{{cityData.city}}</a>
+</li>
+
+{% endfor %}
+</ul>
+
+{% endfor %}
+{% endfor %}
 
 ## Links
 
