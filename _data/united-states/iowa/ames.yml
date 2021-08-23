@@ -4,3 +4,7 @@ food:
   chinese:
     - name: Taste Place
       address: 223 Welch Ave, Ames, IA 50014
+      rate: 3.2
+      comments:
+      - author: Joshua
+        comment: Ummm...
