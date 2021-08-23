@@ -17,4 +17,10 @@ food:
     - name: Panda Express
       address: 436 S Duff Ave, Ames, IA 50010
       comments:
+    - name: Joy's Mongolian Grill
+      address: 112 Hayward Ave, Ames, IA 50014
+      comments:
+      - author: Joshua
+        comment: OK
+        rate: 3.8
 
