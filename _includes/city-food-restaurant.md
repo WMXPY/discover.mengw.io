@@ -2,7 +2,7 @@
 
 {% assign rate-sum = 0 %}
 {% for comment in place.comments %}
-    {% assign fixed-rate = comment.rate  | at_least: 0 | at_most: 5 %}
+    {% assign fixed-rate = comment.rate | at_least: 0 | at_most: 5 %}
     {% assign rate-sum = rate-sum | plus: fixed-rate %}
 {% endfor %}
 
@@ -13,8 +13,10 @@
 #### {{ place.name }}
 
 [{{ place.address }}](geo:?q={{ place.address | replace: " ", "+" | replace: ",", "" }})  
-{{ rate-integral }}.{{ rate-fractional }} / 5.00
+Cumulative Rate: {{ rate-integral }}.{{ rate-fractional }} / 5.00
 
+<p>
 {% for comment in place.comments %}
-{{comment.comment}} - {{comment.author}}
+({{ comment.rate }} / 5.00) {{comment.comment}} - {{comment.author}}<br>
 {% endfor %}
+</p>
