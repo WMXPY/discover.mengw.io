@@ -12,10 +12,12 @@
 
 #### {{ place.name }}
 
-[{{ place.address }}](geo:?q={{ place.address | replace: " ", "+" | replace: ",", "" }})  
-<i class="fa fa-envelope-square fa-fw"></i> Cumulative Rate: {{ rate-integral }}.{{ rate-fractional }} / 5.00
+<i class="fa fa-map-marker fa-fw"></i> [{{ place.address }}](geo:?q={{ place.address | replace: " ", "+" | replace: ",", "" }})  
+<i class="fa fa-star fa-fw"></i> {{ rate-integral }}.{{ rate-fractional }} / 5.00
 
 <p>
+<i class="fa fa-comments fa-fw"></i>
+<br>
 {% for comment in place.comments %}
 {% assign comment-rate-split = comment.rate | at_least: 0 | at_most: 5 | round: 2 | split: "." %}
 {% assign comment-rate-integral = comment-rate-split[0] %}

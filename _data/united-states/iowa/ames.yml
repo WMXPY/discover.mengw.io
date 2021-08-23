@@ -14,3 +14,7 @@ food:
       - author: TF Boys
         comment: Hmmm...
         rate: 1.25
+    - name: Panda Express
+      address: 436 S Duff Ave, Ames, IA 50010
+      comments:
+
