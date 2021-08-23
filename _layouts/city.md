@@ -2,6 +2,7 @@
 
 {% capture core-content %}
 # {{data.city}} - {{data.state}}
+{%- include city-food.md -%}
 {% endcapture %}
 
 <!DOCTYPE html>
