@@ -13,7 +13,7 @@
 #### {{ place.name }}
 
 [{{ place.address }}](geo:?q={{ place.address | replace: " ", "+" | replace: ",", "" }})  
-Cumulative Rate: {{ rate-integral }}.{{ rate-fractional }} / 5.00
+<i class="fa fa-envelope-square fa-fw"></i> Cumulative Rate: {{ rate-integral }}.{{ rate-fractional }} / 5.00
 
 <p>
 {% for comment in place.comments %}
