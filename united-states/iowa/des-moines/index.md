@@ -1,7 +1,6 @@
 ---
-title: Des Moines - Iowa
-layout: default
+country: united-states
+state: iowa
+city: des-moines
+layout: city
 ---
-
-{% assign data = site.data.united-states.iowa.des-moines %}
-# {{data.city}} - {{data.state}}

@@ -1,7 +1,6 @@
 ---
-title: Saint Louis - Missouri
-layout: default
+country: united-states
+state: missouri
+city: saint-louis
+layout: city
 ---
-
-{% assign data = site.data.united-states.missouri.saint-louis %}
-# {{data.city}} - {{data.state}}

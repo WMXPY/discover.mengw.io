@@ -1,4 +1,4 @@
-{% assign data = site.data.united-states.iowa.ames %}
+{% assign data = site.data[page.country][page.state][page.city] %}
 
 {% capture core-content %}
 # {{data.city}} - {{data.state}}
