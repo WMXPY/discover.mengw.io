@@ -5,7 +5,7 @@ layout: home
 
 # Discover
 
-This site discover nice place around earth.
+This site discover nice place around the earth.
 
 {% for country in site.data %}
 {% assign countryName = country[0] %}
