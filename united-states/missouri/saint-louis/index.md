@@ -4,4 +4,4 @@ layout: default
 ---
 
 {% assign data = site.data.united-states.missouri.saint-louis %}
-# {{data.city}} - {{data.states}}
+# {{data.city}} - {{data.state}}
