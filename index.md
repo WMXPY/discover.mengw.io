@@ -7,19 +7,22 @@ layout: home
 
 This site discover nice place around the earth.
 
-{% for country in site.data %}
+{% assign countries = site.data | sort %}
+{% for country in countries %}
 {% assign countryName = country[0] %}
 {% unless countryName == "dictionary" %}
 
 ## {{ site.data.dictionary[countryName] }}
 
-{% for state in site.data[countryName] %}
+{% assign states = site.data[countryName] | sort %}
+{% for state in states %}
 {% assign stateName = state[0] %}
 
 ### {{ stateName | capitalize }}
 
 <ul>
-{% for city in site.data[countryName][stateName] %}
+{% assign cities = site.data[countryName][stateName] | sort %}
+{% for city in cities %}
 {% assign cityName = city[0] %}
 {% assign cityData = city[1] %}
 
