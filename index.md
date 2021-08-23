@@ -9,8 +9,8 @@ This site discover nice place around earth.
 
 ## Unite States
 
--   [Ames - IA](./united-states/ames)
--   [Saint Louis - MO](./united-states/saint-louis)
+-   [Ames - IA](./united-states/ia/ames)
+-   [Saint Louis - MO](./united-states/mo/saint-louis)
 
 ## Links
 
