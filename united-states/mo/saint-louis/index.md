@@ -3,4 +3,5 @@ title: Saint Louis - MO
 layout: default
 ---
 
-# Saint Louis - MO
+{% assign data = site.data.united-states.mo.saint-louis %}
+# {{data.city}} - {{data.states}}

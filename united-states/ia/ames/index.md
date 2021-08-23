@@ -3,4 +3,5 @@ title: Ames - IA
 layout: default
 ---
 
-# Ames - IA
+{% assign data = site.data.united-states.ia.ames %}
+# {{data.city}} - {{data.states}}
