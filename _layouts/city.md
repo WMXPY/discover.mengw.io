@@ -7,7 +7,13 @@
 {% for location-type in data.locations %}
 
 {% assign location-type-name = location-type[0] %}
+{% assign location-type-value = location-type[1] %}
+
 ## {{ location-type-name | capitalize }}
+
+{% include city-location-type.md 
+  location-type=location-type-value
+%}
 
 {% endfor %}
 

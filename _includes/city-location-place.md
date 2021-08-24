@@ -1,4 +1,4 @@
-{% assign place = include.restaurant %}
+{% assign place = include.place %}
 
 {% if place.comments.size > 0 %}
 {% assign rate-sum = 0 %}
