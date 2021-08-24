@@ -1,6 +1,16 @@
 city: Ames
 state: Iowa
 locations:
+  games:
+    - name: Taste Place
+      address: 223 Welch Ave, Ames, IA 50014
+      comments:
+        - author: Joshua
+          comment: Ummm...
+          rate: 3
+        - author: TF Boys
+          comment: Hmmm...
+          rate: 2.5
   food:
     chinese:
       - name: Taste Place
