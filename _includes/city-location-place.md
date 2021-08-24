@@ -17,7 +17,12 @@
 
 #### {{ place.name }}
 
-<i class="fa fa-map-marker fa-fw"></i> [{{ place.address }}](geo:?q={{ place.address | replace: " ", "+" | replace: ",", "" }})  
+<div>
+<i class="fa fa-map-marker fa-fw"></i> 
+{% include address.html 
+  address=place.address
+%}
+</div>
 <i class="fa fa-star fa-fw"></i> {{ rate-integral }}.{{ rate-fractional }} / 5.00
 
 {% if place.comments.size > 0 %}

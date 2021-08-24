@@ -1,0 +1,3 @@
+{% assign address = include.address %}
+{% assign parsed-address = address | replace: " ", "+" | replace: ",", "" %}
+<a href="geo:?q={{ parsed-address }}">{{ address }}</a>
