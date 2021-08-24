@@ -5,6 +5,10 @@
         "Barktler",
         "PCXPY",
         "WMXPY",
+        "endcapture",
+        "endfor",
+        "endunless",
+        "markdownify",
         "mengw"
     ]
 }
