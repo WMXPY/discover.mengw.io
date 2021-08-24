@@ -1,8 +1,16 @@
 {% assign data = site.data[page.country][page.state][page.city] %}
 
 {% capture core-content %}
+
 # {{data.city}} - {{data.state}}
-{%- include city-food.md -%}
+
+{% for location-type in data.locations %}
+
+{% assign location-type-name = location-type[0] %}
+## {{ location-type-name | capitalize }}
+
+{% endfor %}
+
 {% endcapture %}
 
 <!DOCTYPE html>

@@ -1,26 +1,26 @@
 city: Ames
 state: Iowa
-food:
-  chinese:
-    - name: Taste Place
-      address: 223 Welch Ave, Ames, IA 50014
-      comments:
-      - author: Joshua
-        comment: Ummm...
-        rate: 3
-      - author: TF Boys
-        comment: Hmmm...
-        rate: 2.5
-      - author: TF Boys
-        comment: Hmmm...
-        rate: 5
-    - name: Panda Express
-      address: 436 S Duff Ave, Ames, IA 50010
-      comments:
-    - name: Joy's Mongolian Grill
-      address: 112 Hayward Ave, Ames, IA 50014
-      comments:
-      - author: Joshua
-        comment: OK
-        rate: 3.8
-
+locations:
+  food:
+    chinese:
+      - name: Taste Place
+        address: 223 Welch Ave, Ames, IA 50014
+        comments:
+          - author: Joshua
+            comment: Ummm...
+            rate: 3
+          - author: TF Boys
+            comment: Hmmm...
+            rate: 2.5
+          - author: TF Boys
+            comment: Hmmm...
+            rate: 5
+      - name: Panda Express
+        address: 436 S Duff Ave, Ames, IA 50010
+        comments:
+      - name: Joy's Mongolian Grill
+        address: 112 Hayward Ave, Ames, IA 50014
+        comments:
+          - author: Joshua
+            comment: OK
+            rate: 3.8
