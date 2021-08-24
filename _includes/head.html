@@ -5,8 +5,9 @@
   <title>{{ page.title }}</title>
 
   {%- seo -%}
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href={{ "/favicon.ico" | relative_url }} type="image/x-icon" />
   <link rel="stylesheet" href="{{ "/assets/main.css?v=" | append: site.github.build_revision | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/code.css?v=" | append: site.github.build_revision | relative_url  }}">
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
   {%- include google-analytics.html -%}
