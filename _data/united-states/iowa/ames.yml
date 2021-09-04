@@ -25,5 +25,6 @@ locations:
         address: 112 Hayward Ave, Ames, IA 50014
         comments:
           - author: Joshua
+            date: 2021-05-23T10:20:00Z
             comment: OK
             rate: 3.8
