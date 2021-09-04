@@ -7,12 +7,15 @@ locations:
         address: 223 Welch Ave, Ames, IA 50014
         comments:
           - author: Joshua
+            date: 2021-05-23T10:20:00Z
             comment: Ummm...
             rate: 3
           - author: TF Boys
+            date: 2021-05-23T10:20:00Z
             comment: Hmmm...
             rate: 2.5
           - author: TF Boys
+            date: 2021-05-23T10:20:00Z
             comment: Hmmm...
             rate: 5
       - name: Panda Express
