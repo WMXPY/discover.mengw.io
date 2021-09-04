@@ -35,8 +35,10 @@
 {% assign comment-rate-fractional = comment-rate-split[1] | append: "00" | truncate: 2, "" %}
 <span>({{ comment-rate-integral }}.{{ comment-rate-fractional }} / 5.00)</span>
 <span>{{ comment.comment }}</span>
-<span>-</span>
+<span>#</span>
 <span>{{ comment.author }}</span>
+<span>@</span>
+<span>{{ comment.date | date_to_long_string }}</span>
 <br>
 {% endfor %}
 </p>
